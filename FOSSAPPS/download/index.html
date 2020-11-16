@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>FOSSAPPS Download</title>
+    </head>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+        body {
+            font-family: 'Concert One', cursive;
+            margin: 0;
+            background-color: #5c6e91;
+        }
+
+        header {
+            background-color: #9ad3bc;
+            color: #5c6e91;
+            padding-top: 25px;
+            padding-bottom: 35px;
+            padding-left: 5%;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        header p {
+            margin: 0;
+            padding-top: 10px;
+        }
+
+        input[type=text], select {
+            font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 7px;
+  box-sizing: border-box;
+  background-color: #dbf6e9;
+  border: none;
+  box-shadow: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+input[type=text], select:hover {
+    background-color: #9ad3bc;
+    cursor: pointer;
+}
+
+.submit {
+    font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 7px;
+  box-sizing: border-box;
+  background-color: #dbf6e9;
+  border: none;
+  box-shadow: none;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.submit:hover {
+    background-color: #9ad3bc;
+    cursor: pointer;
+}
+.main {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+@media only screen and (max-width: 600px) {
+    .main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    }
+.main p {
+    color: white;
+}
+.main h2 {
+    color: #9ad3bc;
+}
+    </style>
+    <body>
+        <div>
+            <header>
+            <h1>FOSSAPPS</h1>
+            <p>The free and open source GAPPS alternative</p>
+            </header>
+            <div class="main">
+                <p>Select version</p>
+            <select id="select">
+              <option value="Base">Base</option>
+              <option value="MicroG">MicroG Support</option>
+              <option value="Full">Full System app replace (BETA)</option>
+            </select>
+            <br>
+            <button class="submit" type="submit" id="submit" style="font-size: 20px;">Download</button>
+            <h2>Base:</h2>
+            <p>The base version does not include MicroG, so it can run properly on devices with Google Services already installed</p>
+            <h2>MicroG Support:</h2>
+            <p>The MicroG support version does what the same says, it included MicroG for devices without any Google apps</p>
+            <h2>Full system app replace (BETA):</h2>
+            <p>The full system app replace replaces system apps, rather than installing along side them</p>
+          </div>
+          </div>
+          <script>
+          const map = {
+              Base: 'https://github.com/wacko1805/FOSSAPPS/releases/download/V1.5-no-MicroG/FOSSAPPSV1.5-No-MicroG.zip'
+           ,MicroG: 'https://github.com/wacko1805/FOSSAPPS/releases/download/V1.5/FOSSAPPSV1.5.zip'
+           ,Full: 'https://github.com/wacko1805/FOSSAPPS/releases/download/V0.1-BETA/FOSSAPPSBETA-V0.1-BETA.zip'
+          }
+          document.getElementById('submit').addEventListener('click', () =>
+            location.href = map[document.getElementById('select').value])
+          </script>
+    </body>
+</html>
