@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+        body {
+            font-family: 'Concert One', cursive;
+            margin: 0;
+            background-color: #5c6e91;
+        }
+
+        header {
+            background-color: #9ad3bc;
+            color: #5c6e91;
+            padding-top: 25px;
+            padding-bottom: 35px;
+            padding-left: 5%;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        header p {
+            margin: 0;
+            padding-top: 10px;
+            font-family: 'Rhodium Libre', serif;
+        }
+
+        input[type=text], select {
+            font-family: 'Concert One', cursive;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 7px;
+  box-sizing: border-box;
+  background-color: #dbf6e9;
+  border: none;
+  box-shadow: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+input[type=text], select:hover {
+    background-color: #9ad3bc;
+    cursor: pointer;
+    color: white;
+}
+
+.submit {
+    font-family: 'Concert One', cursive;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 7px;
+  box-sizing: border-box;
+  background-color: #dbf6e9;
+  border: none;
+  box-shadow: none;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.submit:hover {
+    background-color: #9ad3bc;
+    cursor: pointer;
+    color: white;
+}
+.main {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+@media only screen and (max-width: 600px) {
+    .main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    }
+.main p {
+    color: white;
+    line-height: 1.6;
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+.main h2 {
+    color: #9ad3bc;
+    font-size: 25px;
+    
+}
+
+a {
+    color: #dbf6e9;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 1.6;
+}
+
+a:hover {
+    color: #82CCAE;
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+   
+  ::-webkit-scrollbar-thumb {
+    background:  #9ad3bc; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #dbf6e9;
+  }
+
+  .buttonhome {
+    background-color: #dbf6e9; 
+    border: none;
+    color: #9ad3bc;;
+    padding: 7px 32px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.2s;
+    font-family: 'Concert One', cursive;
+}
+
+  .buttonhome:hover {
+      cursor: pointer;
+      background-color: #dbf6e9;
+      color: black;
+  }
