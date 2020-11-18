@@ -121,9 +121,7 @@ a {
 
 a:hover {
     color: #82CCAE;
-      font-family: 'Kumbh Sans', sans-serif;
-      font-size: 20.5px;
-
+text-decoration: double;
 }
 
 ::-webkit-scrollbar {
@@ -169,5 +167,16 @@ a:hover {
       background-color: #dbf6e9;
       color: black;
   }
+img {
+    border-radius: 20px;
+    padding: 5px;
+}
 
+figcaption {
+    color: white;
+    padding: 5px;
+    padding-bottom: 20px;
+    width: 50%;
+    font-size: 20px;
+}
   
