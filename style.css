@@ -18,6 +18,7 @@
         header h1 {
             font-size: 50px;
             margin: 0;
+            padding-bottom: 10px;
         }
 
         header p {
@@ -29,11 +30,11 @@
         input[type=text], select {
             font-family: 'Concert One', cursive;
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 13px;
   border-radius: 30px;
-  box-sizing: border-box;
   background-color: #dbf6e9;
   border: none;
   box-shadow: none;
@@ -41,6 +42,13 @@
   font-size: 20px;
   color: #9ad3bc;
 }
+
+@media only screen and (max-width: 600px) {
+    input[type=text], select {
+        padding-bottom: 17px;
+    }
+}
+
 
 input[type=text], select:hover {
     background-color: #9ad3bc;
@@ -51,7 +59,10 @@ input[type=text], select:hover {
 .submit {
     font-family: 'Concert One', cursive;
   width: 100%;
-  padding: 12px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 13px;
   margin: 8px 0;
   display: inline-block;
   border-radius: 30px;
@@ -62,6 +73,12 @@ input[type=text], select:hover {
   transition: 0.3s;
   text-align: left;
   color: #9ad3bc;
+}
+
+@media only screen and (max-width: 600px) {
+    .submit {
+        padding-bottom: 17px;
+    }
 }
 
 .submit:hover {
@@ -89,6 +106,7 @@ input[type=text], select:hover {
 .main h2 {
     color: #9ad3bc;
     font-size: 25px;
+    line-height: 1.6;
     
 }
 
@@ -126,7 +144,10 @@ a:hover {
     background-color: #dbf6e9; 
     border: none;
     color: #9ad3bc;;
-    padding: 7px 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
     border-radius: 30px;
     text-align: center;
     text-decoration: none;
@@ -136,8 +157,17 @@ a:hover {
     font-family: 'Concert One', cursive;
 }
 
+@media only screen and (max-width: 600px) {
+    .buttonhome {
+        padding-bottom: 15px;
+
+    }
+    }
+
   .buttonhome:hover {
       cursor: pointer;
       background-color: #dbf6e9;
       color: black;
   }
+
+  
