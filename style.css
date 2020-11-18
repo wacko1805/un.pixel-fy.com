@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
         body {
             font-family: 'Concert One', cursive;
             margin: 0;
@@ -23,7 +23,7 @@
         header p {
             margin: 0;
             padding-top: 10px;
-            font-family: 'Rhodium Libre', serif;
+            font-family: 'Fira Code', monospace;
         }
 
         input[type=text], select {
@@ -83,7 +83,7 @@ input[type=text], select:hover {
     color: white;
     line-height: 1.6;
     font-size: 20px;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Fira Code', monospace;
     
 }
 .main h2 {
@@ -97,13 +97,15 @@ a {
     text-decoration: none;
     transition: 0.2s;
     font-size: 20px;
-    font-family: 'Kumbh Sans', sans-serif;
     line-height: 1.6;
+    font-family: 'Fira Code', monospace;
 }
 
 a:hover {
     color: #82CCAE;
-    text-decoration: underline;
+      font-family: 'Kumbh Sans', sans-serif;
+      font-size: 20.5px;
+
 }
 
 ::-webkit-scrollbar {
