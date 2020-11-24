@@ -1,61 +1,284 @@
 <html>
     <head>
-        <title>FOSSAPPS</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" 
-      type="image/png" 
-      href="favicon.ico">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <meta name="keywords" content="FOSSAPPS, fossapps, foss, fossdroid, free, android, magisk, GAPPS, magisk module, free and open source">
-      <meta name="author" content="Jack Sam">
-      <meta name="description" content="The free and open source GAPPS alternative.  Get FOSS apps insted of Google Apps!">
+        <title>fossapps</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://egkoppel.github.io/product-sans/google-fonts.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="keywords" content="FOSSAPPS, fossapps, foss, fossdroid, free, android, magisk, GAPPS, magisk module, free and open source">
+        <meta name="author" content="Jack Sam">
+        <meta name="description" content="The free and open source GAPPS alternative.  Get FOSS apps insted of Google Apps!">
+    </head>
+    <script src="scroll.js"></script>
+        <style>
+            body {
+                font-family: Product Sans;
+                margin: 0;
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+                        @font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
 
-        </head>
-        <script src="scroll.js"></script>
-    <body>
-        <div>
-            <header id="top">
-              <h1>  <span style='color: #ec5858'>F</span>OSSAPPS</h1>
-              <p>The free and open source GAPPS alternative</p>
-            </header>
-            <div class="progress-container">
-              <div class="progress-bar" id="myBar"></div>
-            </div>  
-          </div>
-            <div class="main" style="padding-top: 30px;">
-              <div class="links">
-              <a href="download.html"><button class="buttonhome">Download</button></a>
-              <a href="addons.html"><button class="buttonhome">Addons</button></a>
-              <a href="howto.html"><button class="buttonhome">How to Install</button></a>
-              <h2>Apps included on FOSSAPPS:</h2>
-              <a href="https://github.com/moezbhatti/qksms">QKMSM</a><br>
-              <a href="https://github.com/Chooloo/call_manage">Koler</a><br>
-              <a href="https://github.com/raphtlw/Lawnchair">Lawnchair</a><br>
-              <a href="https://github.com/skittles9823/QuickSwitch">Quickswitch</a><br>
-              <a href="https://github.com/Etar-Group/Etar-Calendar">Etar</a><br>
-              <a href="https://github.com/MuntashirAkon/Metro">Metro Music</a><br>
-              <a href="https://github.com/fork-maintainers/iceraven-browser">Ice Raven</a><br>
-              <a href="https://k9mail.app/">K9-Mail</a><br>
-              <a href="https://github.com/tranleduy2000/ncalc">Ncalc</a><br>
-              <a href="https://opencamera.org.uk/">Open Camera</a><br>
-              <a href="https://f-droid.org/">F-Droid</a><br>
-              <a href="https://github.com/TeamNewPipe/NewPipe">NewPipe</a><br>
-              </div>
+header {
+    margin: 5%;
+}
 
-          <h2>Infomation:</h2>
-          <p>FOSSAPPS can be flashed with TWRP when flashing a rom, or can be flashed with Magisk.<br><br>
-          It doesn't need to be flashed when you flash a rom. It can be flashed whenever and uninstalled whenever.<br><br>
-          Please note that this does not remove/replace your stock apps. You will have to do that yourself. I will make a feature to do this In the future</p>
-          </div>
-<footer>
-  <h3>Thanks for checking out FOSSAPPS!</h3>
-  <p>If you find any issues, please report them on the <a href="https://github.com/wacko1805/FOSSAPPS/issues">"issues" tab on Github</a></p>
-  <a href="https://www.reddit.com/u/Wacko1805"><i style="font-size: 25px; padding-right: 20px;" class="fa fa-reddit-alien"></i></a>
-  <a href="mailto:jackocwacko@gmail.com"><i style="font-size: 25px;" class="fa fa-envelope"></i></a>
-  <br>
-  <p style="text-align: center;  margin-top: 20px;"><a style="font-size: 20px; " href="#top">Back to top</a></p>
-</footer>
+header h1 {
+    font-family: Product Sans;
+    font-size: 100px;
+    color: #61BBA7;
+    margin-bottom: 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+        header h1 {
+            font-size: 20vw;
+        }
+        }
+
+header p {
+    padding-top: 10px;
+    margin-top: 0;
+    font-family: Product Sans;
+    font-size: 23px;
+    color: #848ccf;
+    letter-spacing: 1.3;
+}
+
+header h1:hover {
+    color: #848ccf;
+}
+
+.main {
+    margin-top: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+        .main {
+            margin-left: 10%;
+            margin-right: 5%;
+            margin-top: 30%;
+        }
+        }
+.main h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    color: #b590ca;
+    margin-right: 0;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .main h2 {
+        margin-right: 5%;
+    }
+}
+
+.main p {
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    color: #515070;
+    line-height: 1.4;
+    letter-spacing: 0.6;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .main p {
+    }
+    }
+
+
+
+.links  a {
+    text-decoration: none;
+    transition: 0.3s;
+} 
+
+.links  a:hover {
+    color: #b590ca;
+}
+
+input[type=text], select {
+  font-family: 'Syne', sans-serif;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #b590ca;
+  transition: 0.3s;
+  font-size: 20px;
+  color: #b590ca;
+}
+
+input[type=text], select:hover {
+    background-color: #b590ca;
+    color: white;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: white;
+    font-family: 'Syne', sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #b590ca;
+  transition: 0.3s;
+  font-size: 20px;
+  color: #b590ca;
+  text-align: left;
+}
+
+.btn:hover {
+    background-color: #b590ca;
+    color: white;
+    cursor: pointer;
+}
+
+.nav {
+}
+
+.nav a {
+    color: #cecece;
+    text-decoration: none;
+    transition: 0.3s;
+    padding-right: 5px;
+}
+
+.nav a:hover {
+    color: #b590ca;
+}
+
+p a {
+    color: #b590ca;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+p a:hover {
+    color: #cecece;
+}
+
+.fa {
+    color: #b590ca;
+    text-decoration: none;
+    transition: 0.3s;
+    padding-top: 20px;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    color: #cecece;
+  }
+footer p {
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    color: #515070;
+    line-height: 1.4;
+    letter-spacing: 0.6;
+}
+
+footer h3 {
+    padding-top: 10px;
+    margin-top: 0;
+    font-family: Product Sans;
+    font-size: 23px;
+    color: #848ccf;
+    letter-spacing: 1.3;
+}
+footer {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+::selection {
+  color: #515070;
+  background: #61BBA7;
+}
+        </style>
+        <body>
+        <header>
+            <a id="top" style="text-decoration: none;" href="index.html"><h1 id="product-sans">fossapps</h1></a>
+            <p>The free and open source gapps alternative</p>
+            <div class="nav">
+                <a href="#about">about</a>
+                <a href="#apps">apps</a>
+                <a href="#download">download</a>
+                <a href="#addons">addons</a>
+            </div>
+        </header>
+
+        <div class="main">
+            <h2 id="about">About fossapps</h2>
+            <p>Fossapps is a Magisk Module that installs free and open source alternative to Google Apps on to your phone. Just like the apps included on Fossapps,Fossapps is fully free and open source</p>
+            <div style="margin-bottom: 20%;"></div>
+            <h2 id="apps">Apps included on Fossapps</h2>
+            <div class="links">
+            <p><a href="https://github.com/moezbhatti/qksms">QKMSM</a> to replace Messages<br>
+            <a href="https://github.com/Chooloo/call_manage">Koler</a> to replace Phone and Contacts<br>
+            <a href="https://github.com/raphtlw/Lawnchair">Lawnchair</a> to replace Pixel Launcher<br>
+            <a href="https://github.com/skittles9823/QuickSwitch">Quickswitch</a> to enable Gesture support for Lawnchair<br>
+            <a href="https://github.com/Etar-Group/Etar-Calendar">Etar</a> to replace Calendar<br>
+            <a href="https://github.com/MuntashirAkon/Metro">Metro Music</a> to replace Music<br>
+            <a href="https://github.com/fork-maintainers/iceraven-browser">Kiwi</a> to replace Chrome<br>
+            <a href="https://k9mail.app/">K9-Mail</a> to replace Gmail<br>
+            <a href="https://github.com/tranleduy2000/ncalc">Ncalc</a> to replace Calculator<br>
+            <a href="https://opencamera.org.uk/">Open Camera</a> to replace Camera<br>
+            <a href="https://f-droid.org/">F-Droid</a> to Install or update more Foss Apps<br>
+            <a href="https://github.com/TeamNewPipe/NewPipe">NewPipe</a> to replace Youtube<br></p>
+            </div>
+            <div style="margin-bottom: 20%;"></div>
+            <h2 id="download">Download Fossapps</h2>
+            <p style="text-align: left;">Select Version:</p>
+            <select  id="select">
+                <option value="Base">Base</option>
+                <option value="MicroG">MicroG Support</option>
+                <option value="Full">Full System app replace (BETA)</option>
+                <option value="FullMG">Full System app replace With MicroG Support (BETA)</option>
+              </select>
+              <div style="margin-bottom: 10px;"></div>
+              <button class="btn" type="submit" id="submit">Download</button>
+              <h2>Base:</h2>
+            <p>The base version does not include MicroG, so it can run properly on devices with Google Services already installed</p>
+            <h2>MicroG Support:</h2>
+            <p>The MicroG support version does what the name says, it included MicroG for devices without any Google apps</p>
+            <h2>Full system app replace (BETA):</h2>
+            <p>The full system app replace replaces system apps, rather than installing along side them</p>
+            <h2>Full System app replace With MicroG Support (BETA)</h2>
+            <p>The full system app replace with MicroG Support contains all of the MicroG apps, for devices without any Google Apps installed</p>
+            <br>
+              
+            <h2 id="addons">Addons</h2>
+            <p style="margin-bottom: 10%">Fossapps Addons are modules that add more to the normal Fossapps Installation</p>
+            <h2>Google Client Addon (GCA)</h2>
+            <p>Installs <a href="https://auroraoss.com/">Aurora Store</a> and <a href="https://vancedapp.com">Vanced Manager</a>, Free and Open Source alternatives to the Google Play Store and Youtube. </p>
+            <p style="text-align: left;">Download Fossapps GCA:</p>
+            <a href="https://github.com/wacko1805/Fossapps-Addons/releases/download/V1.0-GCA/Fossapps-GCA.zip"><button class="btn" >Download</button></a>
+        </div> 
+
+        <footer>
+            <h3>Thanks for checking out FOSSAPPS!</h3>
+            <p>If you find any issues, please report them on the <a href="https://github.com/wacko1805/FOSSAPPS/issues">"issues" tab on Github</a></p>
+            <a href="https://www.reddit.com/u/Wacko1805"><i style="font-size: 25px; padding-right: 20px;" class="fa fa-reddit-alien"></i></a>
+            <a href="mailto:jackocwacko@gmail.com"><i style="font-size: 25px;" class="fa fa-envelope"></i></a>
+            <br>
+            <p style="text-align: center;  margin-top: 20px;"><a style="font-size: 20px; " href="#top">Back to top</a></p>
+          </footer>
+
+        <script src="download.js"></script>
+
     </body>
 </html>
