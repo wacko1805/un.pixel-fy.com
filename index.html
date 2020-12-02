@@ -18,6 +18,7 @@
             body {
                 font-family: Product Sans;
                 margin: 0;
+                background-color: #e8e8e8;
             }
             @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
@@ -29,65 +30,49 @@
   src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
-header {
-  height: 90vh;
-  width: 100%;
-  background-color: #30475e;
-  clip-path: ellipse(100% 55% at 48% 44%);
-  margin-bottom: 0;
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        clip-path: ellipse(100% 55% at 48% 4%);
-
-    }
-    }
 header h1 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 10vw;
-    color: white;
-    margin-bottom: 0;
-    text-decoration: none;
-    transition: 0.3s;
-    margin-top: 0;
-    text-align: center;
-    padding-top: 10%;
-}
+            font-family: Product Sans;
+            font-size: 10vw;
+            margin-bottom: 0;
+            color: #e8e8e8;
+            transition: 0.3s;
+        }
 
-@media only screen and (max-width: 600px) {
-    header h1 {
-        font-size: 17vw;
-    }
-    }
-
-header p {
-    padding-top: 10px;
-    margin-top: 0;
-    font-family: Product Sans;
-    font-size: 2vw;
-    color: #9ad3bc;
-    letter-spacing: 1.3;
-    text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-    header p {
-        font-size: 5vw;
-
-    }
-    }
-
+        @media only screen and (max-width: 600px) {
+            header h1 {
+                font-size: 20vw;
+            }
+        }
+        header p {
+            margin-top: 2%;
+            font-family: Product Sans;
+            padding-left: 5px;
+            color: #e0ece4;
+            font-size: 1.5vw;
+        }
+        @media only screen and (max-width: 600px) {
+            header p {
+                font-size: 4vw;
+            }
+            }
+        header {
+            padding-top: 10%;
+            padding-bottom: 10%;
+            background-color: #839b97;
+            padding-left: 5%;
+        }
 header h1:hover {
-    color: #61BBA7;
-}
+    color: #CDB9DF;
 
+}
+.nav {
+margin-left: 5px;
+}
 .nav a {
-    text-align: center;
+    text-align: left;
     color: #cecece;
     text-decoration: none;
     transition: 0.3s;
-    padding-right: 5px;
     font-size: 1vw;
 }
 @media only screen and (max-width: 600px) {
@@ -97,16 +82,11 @@ header h1:hover {
 }
 
 .nav a:hover {
-    color: #b590ca;
-    font-size: 1.5vw;
+    color: #515070;
 
 }
 
-@media only screen and (max-width: 600px) {
-    .nav a:hover {
-    font-size: 3.5vw;
-}
-}
+
 
 .main {
     margin-top: 10%;
@@ -182,17 +162,20 @@ input[type=text], select {
   transition: 0.3s;
   font-size: 20px;
   color: #b590ca;
-  background-color: white;
+                  background-color: #e8e8e8;
+
 }
 
 input[type=text], select:hover {
     background-color: #b590ca;
-    color: white;
+    color: #e8e8e8;
+
     cursor: pointer;
 }
 
 .btn {
-    background-color: white;
+                    background-color: #e8e8e8;
+
     font-family: 'Syne', sans-serif;
   padding: 10px;
   border-radius: 10px;
@@ -205,7 +188,8 @@ input[type=text], select:hover {
 
 .btn:hover {
     background-color: #b590ca;
-    color: white;
+    color: #e8e8e8;
+
     cursor: pointer;
 }
 
@@ -220,7 +204,7 @@ p a {
 }
 
 p a:hover {
-    color: #61BBA7;
+    color: #CDB9DF;
 }
 
 .fa {
@@ -258,14 +242,14 @@ footer {
 
 ::selection {
   color: #515070;
-  background: #61BBA7;
+  background: #CDB9DF;
 }
         </style>
         <body>
             <header>
                 <a id="top" style="text-decoration: none;" href="index.html"><h1 id="product-sans">Fossapps</h1></a>
                 <p>The free and open source gapps alternative</p>
-                <div style="text-align: center;" class="nav">
+                <div style="text-align: left;" class="nav">
                     <a href="#about">about</a>
                     <a href="#apps">apps</a>
                     <a href="#download">download</a>
