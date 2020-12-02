@@ -34,6 +34,7 @@ header {
   width: 100%;
   background-color: #30475e;
   clip-path: ellipse(100% 55% at 48% 44%);
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -78,7 +79,7 @@ header p {
     }
 
 header h1:hover {
-    color: #848ccf;
+    color: #61BBA7;
 }
 
 .nav a {
@@ -87,14 +88,28 @@ header h1:hover {
     text-decoration: none;
     transition: 0.3s;
     padding-right: 5px;
+    font-size: 1vw;
+}
+@media only screen and (max-width: 600px) {
+    .nav a {
+    font-size: 3vw;
+}
 }
 
 .nav a:hover {
     color: #b590ca;
+    font-size: 1.5vw;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .nav a:hover {
+    font-size: 3.5vw;
+}
 }
 
 .main {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -103,7 +118,7 @@ header h1:hover {
         .main {
             margin-left: 5%;
             margin-right: 5%;
-            margin-top: 30%;
+            margin-top: 0;
         }
         }
 .main h2 {
@@ -282,32 +297,27 @@ footer {
             <p style="text-align: left;">Select Version:</p>
             <select  id="select">
                 <option value="Base">Base</option>
-                <option value="MicroG">MicroG Support</option>
-                <option value="Full">Full System app replace (BETA)</option>
-                <option value="FullMG">Full System app replace With MicroG Support (BETA)</option>
+
               </select>
               <div style="margin-bottom: 10px;"></div>
               <button class="btn" type="submit" id="submit">Download</button>
-              <h2>What are the different versions?</h2>
-              <div class="sub">
-              <h3>Base:</h3>
-            <p>The base version does not include MicroG, so it can run properly on devices with Google Services already installed</p>
-            <h3>MicroG Support:</h3>
-            <p>The MicroG support version does what the name says, it included MicroG for devices without any Google apps</p>
-            <h3>Full system app replace (BETA):</h3>
-            <p>The full system app replace replaces system apps, rather than installing along side them</p>
-            <h3>Full System app replace With MicroG Support (BETA)</h3>
-            <p>The full system app replace with MicroG Support contains all of the MicroG apps, for devices without any Google Apps installed</p>
-            <br>
-            </div>
+
               
             <h2 id="addons">Addons</h2>
             <p style="margin-bottom: 10%">Fossapps Addons are modules that add more to the normal Fossapps Installation</p>
             <div class="sub">
+            <h3>MicroG Addon</h3>
+            <p>Adds MicroG Support to Fossapps. This installs all the MicroG apps.</p>
+            <p style="text-align: left;">Download Fossapps MicroG Addon:</p>
+            <a href="#"><button class="btn" >Download</button></a>
             <h3>Google Client Addon (GCA)</h3>
             <p>Installs <a href="https://auroraoss.com/">Aurora Store</a> and <a href="https://vancedapp.com">Vanced Manager</a>, Free and Open Source alternatives to the Google Play Store and Youtube. </p>
             <p style="text-align: left;">Download Fossapps GCA:</p>
             <a href="https://github.com/wacko1805/Fossapps-Addons/releases/download/V1.0-GCA/Fossapps-GCA.zip"><button class="btn" >Download</button></a>
+            <h3>System app remover addon</h3>
+            <p>Removes system apps</p>
+            <p style="text-align: left;">Download System App Remover Addon:</p>
+            <a href="#"><button class="btn" >Download</button></a>
         </div> 
         </div>
         <footer>
@@ -315,6 +325,7 @@ footer {
             <p>If you find any issues, please report them on the <a href="https://github.com/wacko1805/FOSSAPPS/issues">"issues" tab on Github</a></p>
             <a href="https://www.reddit.com/u/Wacko1805"><i style="font-size: 25px; padding-right: 20px;" class="fa fa-reddit-alien"></i></a>
             <a href="mailto:jackocwacko@gmail.com"><i style="font-size: 25px;" class="fa fa-envelope"></i></a>
+            <p style="font-size: 10px; padding-top: 30px;">&copy 2020 Jack Sam</p>
             <br>
             <p style="text-align: center;  margin-top: 20px;"><a style="font-size: 20px; " href="#top">Back to top</a></p>
           </footer>
