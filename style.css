@@ -27,7 +27,7 @@ font-size: 1.5vw;
 }
 @media only screen and (max-width: 600px) {
 header p {
-    font-size: 4vw;
+    font-size: 3vw;
 }
 }
 header {
@@ -35,6 +35,12 @@ padding-top: 10%;
 padding-bottom: 10%;
 padding-left: 5%;
 }
+@media only screen and (max-width: 600px) {
+    header {
+        padding-top: 20%;
+padding-bottom: 30%;
+    }
+    }
 header h1:hover {
     color: #839b97;
 }
