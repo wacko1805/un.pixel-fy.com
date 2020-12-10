@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 body {
     font-family: 'Poppins', sans-serif;
 margin: 0;
-background-color: #e8e8e8;
+background-color: white;
 }
 
 header h1 {
@@ -31,14 +31,15 @@ header p {
 }
 }
 header {
+    background-color: white;
 padding-top: 10%;
-padding-bottom: 10%;
+padding-bottom: 15%;
 padding-left: 5%;
 }
 @media only screen and (max-width: 600px) {
     header {
-        padding-top: 20%;
-padding-bottom: 30%;
+        padding-top: 10%;
+padding-bottom: 10%;
     }
     }
 header h1:hover {
@@ -70,23 +71,23 @@ margin-right: 15%;
 }
 @media only screen and (max-width: 600px) {
 .main {
-    margin-left: 5%;
-     margin-right: 5%;
+    margin-left: 10%;
+     margin-right: 10%;
      margin-top: 0;
     }
 }
 .main h2 {
 text-align: left;
 font-size: 30px;
-margin-bottom: 50px;
+margin-bottom: 20px;
 margin-top: 80px;
 color: #b590ca;
 margin-right: 0;
 }
 .main h3 {
 text-align: left;
-font-size: 26px;
-margin-bottom: 50px;
+font-size: 3vh;
+margin-bottom: 20px;
 margin-top: 80px;
 color: #848ccf;
 margin-right: 0;
@@ -97,16 +98,23 @@ margin-left: 5%;
 @media only screen and (max-width: 600px) {
 .main h2 {
     margin-right: 5%;
+    font-size: 25px;
 }
 }
 .main p {
-font-family: 'DM Mono', monospace;
-font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
 color: #515070;
 line-height: 1.4;
 letter-spacing: 0.6;
 text-align: left;
 }
+@media only screen and (max-width: 600px) {
+    .main p {
+        font-size: 17px;
+    }
+    }
+
 a {
 text-decoration: none;
 transition: 0.3s;
@@ -116,7 +124,7 @@ a:hover {
 color: #848ccf;
 }
 input[type=text], select {
-font-family: 'DM Mono', monospace;
+font-family: 'Varela Round', sans-serif;
 width: 100%;
 padding: 10px;
 border-radius: 5px;
@@ -124,16 +132,16 @@ border: 2px solid #b590ca;
 transition: 0.3s;
 font-size: 20px;
 color: #b590ca;
-background-color: #e8e8e8;
+background-color: white;
 }
 input[type=text], select:hover {
 background-color: #b590ca;
-color: #e8e8e8;
+color: white;
 cursor: pointer;
 }
 .btn {
-background-color: #e8e8e8;
-font-family: 'DM Mono', monospace;
+background-color: white;
+font-family: 'Varela Round', sans-serif;
 padding: 10px;
 border-radius: 5px;
 border: 2px solid #b590ca;
@@ -144,7 +152,7 @@ text-align: left;
 }
 .btn:hover {
 background-color: #b590ca;
-color: #e8e8e8;
+color: white;
 cursor: pointer;
 }
 .fa {
@@ -159,7 +167,7 @@ text-decoration: none;
 color: #848ccf;
 }
 footer p {
-font-family: 'DM Mono', monospace;
+font-family: 'Varela Round', sans-serif;
 font-size: 20px;
 color: #515070;
 line-height: 1.4;
