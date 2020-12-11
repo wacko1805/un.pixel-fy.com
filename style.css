@@ -149,6 +149,7 @@ transition: 0.3s;
 font-size: 20px;
 color: #b590ca;
 text-align: left;
+margin-bottom: 10px;
 }
 .btn:hover {
 background-color: #b590ca;
