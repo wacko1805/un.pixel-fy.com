@@ -1,6 +1,6 @@
 const map = {
-    Base: 'https://github.com/wacko1805/FOSSAPPS/releases/download/V1.8/Fossapps-V1.8.zip'
- ,Micro: 'https://github.com/wacko1805/FOSSAPPS/releases/download/V1.8/Fossapps-micro-V1.8.zip'
+    Base: 'https://github.com/wacko1805/Fossapps/releases/download/V2.0/Fossapps-V2.0.zip'
+ ,Micro: 'https://github.com/wacko1805/Fossapps/releases/download/V2.0/Fossapps-micro-V2.0.zip'
 
 }
 document.getElementById('submit').addEventListener('click', () =>
